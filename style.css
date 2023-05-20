@@ -1,4 +1,7 @@
-
+/* Color Scheme */
+/* #082032 Dark Blue */
+/* #F5F5ED white */
+/* #FF4C29 Orange */
 .body {
     background-color: #082032;
 }
@@ -32,6 +35,30 @@ form {
     display: flex;
     flex-direction: column;
     padding: 0 5rem;
+    gap: 10px;
+}
+input {
+    padding: 8px 5px;
+    border-radius: 3px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #082032;
+    background: transparent;
+}
+input:focus {
+    background-color: #F5F5ED;
+    
+    border-width: 2px;
+    border-color: #FF4C29;
+}
+button {
+    width: 50%;
+    align-self: center;
+    padding: 8px 5px;
+    border-radius: 10px;
+
+    color: #F5F5ED;
+    background-color: #082032;
 }
 
 .logo-half {
