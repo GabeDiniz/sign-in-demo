@@ -3,7 +3,7 @@
 /* #F5F5ED white */
 /* #FF4C29 Orange */
 .body {
-    background-color: #082032;
+    background-image: linear-gradient(145deg, #082032, #2c394b);
 }
 
 .window {
@@ -16,12 +16,9 @@
     height: 70vh;
     
     background-color: #d2d2d2;
-
     border-radius: 25px;
-
     display: flex;
 }
-
 
 .sign-in-half {
     background-color: antiquewhite;
@@ -29,13 +26,23 @@
     display: flex;
     flex-direction: column;
     padding: 5rem 2rem;
+    border-radius: 25px 0 0 25px;
+
     align-items: center;
-}   
+}
+.logo-half {
+    background-size: cover;
+    background-image: url(bg.jpg);
+    width: 20rem;
+    background-position: center;
+    border-radius: 0 25px 25px 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
     padding: 0 5rem;
-    gap: 10px;
+    gap: 2rem;
 }
 input {
     padding: 8px 5px;
@@ -59,9 +66,4 @@ button {
 
     color: #F5F5ED;
     background-color: #082032;
-}
-
-.logo-half {
-    background: lightblue;
-    width: 50%;
 }
