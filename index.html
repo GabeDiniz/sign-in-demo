@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+        function loggingIn() {
+            const Username = document.getElementById("username").value;
+            const Email = document.getElementById("email").value;
+            const Password = document.getElementById("password").value;
+            console.log(Username, Email, Password);
+        }
+    </script>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"> 
@@ -9,11 +17,18 @@
         <div class="window">
             <div class="sign-in-half">
                 <h1>SIGN IN</h1>
-                <form class="form">
-                    <input type="text" placeholder="Username" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" name="" id="" pattern="[A-Za-z]{3}" required>
-                    <button type="submit">Submit</button>
+                <form onsubmit="loggingIn();return false;">
+                    <input type="text" placeholder="Username" id="username" required />
+                    <input type="email" placeholder="Email" id="email" required />
+                    <input 
+                        type="password" 
+                        placeholder="Password"
+                        id="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}" 
+                        title="Password requires a minimum of 1 uppercase letter, 1 lowercase, and 1 digit"
+                        required
+                    />
+                    <button type="submit">Sign in</button>
                 </form>
             </div>
             <div class="logo-half">

@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 50vw;
+    width: 70vw;
     min-width: 30rem;
     height: 70vh;
     
@@ -20,7 +20,8 @@
     border-radius: 25px;
     display: flex;
     font-family: 'Kanit', sans-serif;
-    box-shadow: 0 8px 20px 8px #FFF0C5;
+    box-shadow: 0 8px 60px 0 #FFF0C5;
+    border: #082032 2px solid;
 }
 
 .sign-in-half {
@@ -28,17 +29,19 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 0 2rem;
     border-radius: 25px 0 0 25px;
     align-items: center;
+    justify-content: center;
 }
 .logo-half {
     background-size: cover;
     background-image: url(bg.jpg);
     background-position: center;
+    border-radius: 0 20px 20px 0;
+    
     width: 100vw;
     min-width: 10rem;
-    border-radius: 0 20px 20px 0;
     color: #F5F5ED;
 
     display: flex;
@@ -53,33 +56,32 @@
 form {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 5rem;
     gap: 2rem;
 }
 input {
     padding: 8px 5px;
     border-radius: 3px;
-    outline: 0;
+    border: #002053 solid;
     border-width: 0 0 2px;
-    border-color: #082032;
     background: transparent;
     font-size: 12px;
+    outline: none;
 }
 input:focus {
     background-color: #F5F5ED;
     transform: scale(1.05);
-    transition: 0.4s;
-    border-width: 2px;
-    border-color: #082032;
+    transition: 0.5s;
+    outline: none;
+    border: #002053 solid 2px;
 }
 button {
     width: 50%;
     align-self: center;
     padding: 8px 5px;
-    border-radius: 10px;
-
+    border-radius: 5px;
     color: #F5F5ED;
-    background-color: #082032;
+    background-color: #002053;
 }
 button:hover {
     cursor: pointer;
